@@ -12,20 +12,13 @@
   </head>
   <body>
     <script type="text/babel">
-      // Primitive
-      const number = 1;
-      const num2 = number;
-      console.log(num2);
+      const numbers = [1, 2, 3];
 
-      // Reference
-      const person = {
-        name: 'Max'
-      }
-      const secondPerson = {
-        ...person
-      };
-      person.name = 'Manu';
-      console.log(secondPerson);
+      const doubleNumArray = numbers.map((num) => {
+        return num * 2;
+      });
+      console.log(numbers);
+      console.log(doubleNumArray);
     </script>
   </body>
 </html>
