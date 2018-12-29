@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+    <style>
+    </style>
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <script type="text/babel">
+      // Primitive
+      const number = 1;
+      const num2 = number;
+      console.log(num2);
+
+      // Reference
+      const person = {
+        name: 'Max'
+      }
+      const secondPerson = {
+        ...person
+      };
+      person.name = 'Manu';
+      console.log(secondPerson);
+    </script>
+  </body>
+</html>
