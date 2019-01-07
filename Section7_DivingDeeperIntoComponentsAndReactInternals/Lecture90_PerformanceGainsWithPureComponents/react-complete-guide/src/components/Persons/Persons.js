@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import Person from './Person/Person';
 
-class Persons extends Component {
+class Persons extends PureComponent {
   constructor(props) {
     super(props);
     console.log('[Persons.js] Inside Constructor', props);
