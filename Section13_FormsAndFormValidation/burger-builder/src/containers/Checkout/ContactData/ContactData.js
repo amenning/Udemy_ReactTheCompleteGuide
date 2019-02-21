@@ -85,6 +85,7 @@ class ContactData extends Component {
                     ]
                 },
                 value: '',
+                vadidation: {},
                 valid: true
             }
         },
@@ -118,6 +119,10 @@ class ContactData extends Component {
 
     checkedValidity(value, rules) {
         let isValid = true;
+        if (!rules) {
+            return true;
+        }
+
         if (rules.required) {
             isValid = value.trim() !== '' && isValid;
         }
