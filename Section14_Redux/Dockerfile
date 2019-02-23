@@ -19,4 +19,8 @@ COPY . .
 # replace this with your application's default port
 EXPOSE 3000
 
-CMD [ "npm", "start" ]
+# Use this command to run the react app
+# CMD ["npm", "start"]
+
+# Use this command to run the redux-basics.js file
+CMD [ "node", "src/redux-basics.js" ]
