@@ -20,7 +20,7 @@ COPY . .
 EXPOSE 3000
 
 # Use this command to run the react app
-# CMD ["npm", "start"]
+CMD ["npm", "start"]
 
 # Use this command to run the redux-basics.js file
-CMD [ "node", "src/redux-basics.js" ]
+# CMD [ "node", "src/redux-basics.js" ]
